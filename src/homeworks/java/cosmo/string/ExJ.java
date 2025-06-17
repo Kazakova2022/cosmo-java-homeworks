@@ -10,6 +10,12 @@ package homeworks.java.cosmo.string;
 public class ExJ {
     public static void main(String[] args) {
         String[] input = {"Дом", "Стена", "Машина", "Телефон", "Кот", "Микроволновка", "Деньги", "Яхта" };
-
+        String line = "";
+        for (String inputs : input) {
+            if (inputs.length() > line.length()) {
+                line = inputs;
+            }
+        }
+        System.out.println(line);
     }
 }
